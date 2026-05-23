@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard API finance</title>
+    <style>
+        :root {
+            --primary-color: #9e0936;
+            --secondary-color: #cfbfbf;
+            --text-color: #bb9c7f;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #9e0936;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary-color);
+            border-bottom: #cfbfbf 3px solid;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-content {
+            color: var(--secondary-color);
+            margin: 0 auto;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #cf5f5f;
+        }
+        h1 {
+            color: #cfbfbf;
+        }
+        p {
+            color: #bb9c7f;
+            line-height: 1.6;
+        }
+    </style>
+    <script></script>
+</head>
+<body>
+    <!-- Contenido Dashboard API finance -->
+    <div class="header">
+    <h1>Dashboard API finance</h1>
+    <h2> Panel de control del Dashboard</h2>
+    <div class="content">
+        <p>Bienvenido al Dashboard de la API de finanzas. Aquí podrás visualizar y gestionar tus datos financieros de manera eficiente.</p>
+        <P> Utiliza las herramientas y gráficos disponibles para analizar tus finanzas y tomar decisiones informadas.</P>
+    </div>
+
+    <!-- contenido del dashboard -->
+     div class="dashboard-content">
+        <!-- navegación del dashboard -->
+        <div class="navegation-buttons">
+            <button onclick="showSection('overview')">Overview</button>
+            <button onclick="showSection('reports')">Reports</button>
+            <button onclick="showSection('settings')">Settings</button>
+            <button onclick="showSection('help')">Help</button>
+        </div>
+    </div>
+
+    <!-- secciones del area de visión dashboard -->
+    <div class="content">
+        <!--area de visión general-->
+        <div id="overview" class="view active">
+            <button class=""btn btn-primary" onclick="refreshOverview()">
+            <spam>Actualizar.</spam>
+            </button>
+        </div>
+    </div>
+        <!--area de visión general-->
+        <div id="clientes" class="view ">
+            <button class=""btn btn-primary" onclick="refreshOverview()">
+            <p>Ver clientes.</p>
+        </button>
+        </div>
+    </div>
+    <script>
+        // Configurar la navegación entre secciones del dashboard
+        let config = {
+            apiUrl: 'https://api.finance.com/v1',
+            apikey: 'tu_api_key_aqui'
+        };
+        // Guardar configuración en localStorage
+        localStorage.setItem('dashboardConfig', JSON.stringify(config));
+        // API ayuda a mostrar la sección seleccionada
+
+        // Test de conexión a la API
+
+        // Descargar datos de la API y actualizar la sección de visión general
+
+        // Show visualizaciones y gráficos en la sección de visión general
+
+        // Refrescar la sección de configuración y mostrar opciones de configuración
+
+        // Generar porfolio de clientes y mostrar en la sección de clientes
+    </script>
+</body>
+</html>
